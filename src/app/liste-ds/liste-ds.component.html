@@ -1,0 +1,25 @@
+
+<app-dashboard-ds></app-dashboard-ds>
+
+
+<div class="container">
+
+  <div class="card shadow mb-4">
+  <div class="card-body">
+  <table class="table table-striped">
+  <tr> <th>Id</th><th>Compétence</th> <th>Expérience</th> <th>Rénumération</th> <th>Action</th> </tr>
+  <tbody *ngFor="let fiche of fiche">
+  <tr >
+  <td>{{fiche.idFiche}}</td>
+  <td>{{fiche.competence}}</td>
+  <td>{{fiche.experience}}</td>
+  <td>{{fiche.renumeration }}</td>
+  <td><a class="btn btn-danger" (click)="supprimerFiche(fiche)">Supprimer</a></td>
+  <td>  <a class="nav-link" routerLink="/updateficheDS"> <button type="submit" class="btn btn-success">Modifier</button></a></td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+

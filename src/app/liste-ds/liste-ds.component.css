@@ -1,0 +1,20 @@
+table {
+  margin-bottom: 10px;
+}
+.card-body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+
+
+
+.card {
+  max-width: 80%;
+  margin: 0;
+}
+
+
+.container .card {
+  margin-left: auto;
+}

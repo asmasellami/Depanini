@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container form-container">
+    <div>
+      <!-- <h2>Ajouter une fiche :</h2> -->
+    </div>
+    <form>
+<h2 style="text-align: center;"> Ajouter une fiche </h2>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <label>Compétence</label>
+        <select class="form-control" id="genre" name="genre" required>
+          <option value="dev">Développement</option>
+          <option value="plomberie">Plomberie</option>
+          <option value="garderie">Garderie</option>
+          <option value="electricite">Electricité</option>
+        </select>
+      </div>
+
+      <div class="col-sm-2 col-md-2 col-lg-2">
+        <label>Expérience</label>
+        <input type="number" class="form-control">
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <label>Rémunération</label>
+        <input type="number" class="form-control">
+      </div>
+
+      <div class="mt-2">
+       <a class="nav-link" routerLink="/listeDS"> <button type="submit" class="btn btn-success">Ajouter</button></a>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
